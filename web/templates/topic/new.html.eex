@@ -1,1 +1,3 @@
-<h1>New Test Form</h1>
+<%= form_for @changeset, post_path(@conn, :create), fn f -> %>
+
+<% end %>
