@@ -5,4 +5,7 @@ defmodule Discuss.Topic do
       field :title, :string
   end
 
+  def changeset(struct, params \\ %{}) do
+    
+  end
 end
