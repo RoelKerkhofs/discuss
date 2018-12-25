@@ -6,4 +6,5 @@ defmodule Discuss.TopicController do
   def new(conn, params) do
     changeset = Topic.changeset(%Topic{}, %{})
   end
+  
 end
