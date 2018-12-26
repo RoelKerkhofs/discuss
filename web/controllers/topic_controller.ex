@@ -31,7 +31,7 @@ defmodule Discuss.TopicController do
     topic = Repo.get(Topic, topic_id)
     changeset = Topic.changeset(topic)
 
-    render conn, "edit.html", changeset: changeset, topic, topic
+    render conn, "edit.html", changeset: changeset, topic: topic
   end
 
 end
