@@ -26,7 +26,7 @@ config :logger, :console,
 # of this file so it overrides the configuration defined above.
 import_config "#{Mix.env}.exs"
 
-config :ueberauth, Uberauth,
+config :ueberauth, Ueberauth,
   providers:[
     github {Ueberauth.Strategy.Github, []}
   ]
