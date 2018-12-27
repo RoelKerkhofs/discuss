@@ -26,8 +26,9 @@ defmodule Discuss.AuthController do
   end
 
   defp insert_or_update_user(changeset) do
+    IO.inspect(changeset.changes.email)
     case Repo.get_by(User, email: changeset.changes.email) do
-      nil ->
+     nil ->
         Repo.insert(changeset)
       user ->
         {:ok, user}

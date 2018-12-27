@@ -6,7 +6,7 @@ defmodule  Discuss.User do
     field :provider, :string
     field :token, :string
 
-    timestamps()
+    # timestamps()
   end
 
   def changeset(struct, params \\{}) do
