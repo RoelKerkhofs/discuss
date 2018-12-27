@@ -40,7 +40,7 @@ defmodule Discuss.Mixfile do
      {:ecto_sql, "~> 3.0.3"},
      {:cowboy, "~> 1.0"},
      {:ueberauth, "~> 0.3"},
-     {:ueberauth_github, "~> 0.4"}]
+     {:ueberauth_github, "~> 0.7"}]
   end
 
   # Aliases are shortcuts or tasks specific to the current project.
