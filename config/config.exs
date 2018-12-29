@@ -31,6 +31,7 @@ config :ueberauth, Ueberauth,
     github: { Ueberauth.Strategy.Github, [default_scope: "user,public_repo"] }
   ]
 
+# Replace these with working codes from Github
 config :ueberauth, Ueberauth.Strategy.Github.OAuth,
   client_id: "1f62b812dad6013ee538",
   client_secret: "b68b9f2851c874086fa6b1c81cc75f86f75b5995"
