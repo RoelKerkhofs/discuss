@@ -1,12 +1,12 @@
 defmodule Discuss.Comment do
   use Discuss.Web, :model
 
-  @derive {Poison.Encoder, only: [:content]}
-  
+  @derive {Poison.Encoder, only: [:content, :user]}
+
   schema "comments" do
       field :content, :string
-      belongs_to :user, Discussion.User
-      belongs_to :topic, Discussion.Topic
+      belongs_to :user, Discuss.User
+      belongs_to :topic, Discuss.Topic
   end
 
   def changeset(struct, params \\ %{}) do

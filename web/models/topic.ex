@@ -3,7 +3,7 @@ defmodule Discuss.Topic do
 
   schema "topics" do
       field :title, :string
-      belongs_to :user, Discussion.User
+      belongs_to :user, Discuss.User
       has_many :comments, Discuss.Comment
   end
 
